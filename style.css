@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+
+ }
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #000319, #5A3492);
+}
+
+.container{
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px rgba(0,0,0,0.2);
+}
+
+h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #5A3492;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+input[type=text]:focus{
+    border-color: #5A3492;
+}
+button{
+    padding: 10px 20px;
+    font-size: 17px;
+    color: #fff;
+    background-color: #5A3492;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+ button:hover{
+     background-color: #5A3492;
+ }
+ #TaskList{
+     list-style-type: none;
+     margin-top: 20px;
+     padding: 0;
+ }
+
+ .task{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 12px 15px;
+     margin: 10px 0;
+     background-color: #c7a7ff;
+     border-radius: 25px;
+     color: #333333;
+     font-size: 16px;
+     border: 1px solid #5A3492;
+ }
+
+ .task.completed{
+     text-decoration: line-through;
+     color: #999;
+     background-color: #c7a7ff;
+ }
+
+ .delete-btn{
+     background-color: transparent;
+     border: none;
+     color: #5A3492;
+     font-size: 14px;
+     cursor: pointer;
+ }
